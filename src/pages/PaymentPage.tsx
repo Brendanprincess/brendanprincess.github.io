@@ -38,7 +38,7 @@ const PaymentPage = () => {
   const [copied, setCopied] = useState(false);
   const { toast } = useToast();
   const location = useLocation();
-  const price = (location.state as any)?.price || 299;
+  const price = (location.state as any)?.price || 269.10;
 
   const selected = chains.find((c) => c.id === selectedChain);
 
@@ -135,7 +135,7 @@ const PaymentPage = () => {
               </div>
 
               <p className="text-muted-foreground text-xs">
-                After sending payment, your order will be processed automatically. Please allow up to 12 hours for confirmation.
+                After sending payment, please allow up to <span className="text-foreground font-semibold">10 minutes</span> for confirmation and payment verification.
               </p>
             </motion.div>
           )}
@@ -146,6 +146,15 @@ const PaymentPage = () => {
             ↑ Select a chain above to see payment details
           </p>
         )}
+
+        <div className="mt-12 glass rounded-xl p-6 max-w-md mx-auto space-y-3">
+          <p className="text-muted-foreground text-sm">
+            💬 Need help? <a href="https://t.me/YourSupportBot" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Contact Support on Telegram</a>
+          </p>
+          <p className="text-muted-foreground text-sm">
+            🤖 Prefer to pay via Telegram? <a href="https://t.me/YourPaymentBot" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Use our Telegram Bot</a>
+          </p>
+        </div>
       </div>
     </div>
   );
