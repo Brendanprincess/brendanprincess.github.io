@@ -47,7 +47,7 @@ const TokenInfoPage = () => {
             </p>
             <Link to="/order">
               <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-base px-8 py-6 rounded-xl shadow-glow">
-                Order Now - from <span className="line-through opacity-60 mx-1">$499.00</span> $299.00
+                Order Now - from <span className="line-through opacity-60 mx-1">$299.00</span> $269.10 <span className="text-xs opacity-80">(-10%)</span>
               </Button>
             </Link>
             <div className="flex items-center justify-center gap-3 mt-4 text-muted-foreground text-sm">
@@ -120,7 +120,7 @@ const TokenInfoPage = () => {
         <div className="text-center mt-12">
           <Link to="/order">
             <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-base px-8 py-6 rounded-xl shadow-glow">
-              Order Now - from <span className="line-through opacity-60 mx-1">$499.00</span> $299.00
+              Order Now - from <span className="line-through opacity-60 mx-1">$299.00</span> $269.10 <span className="text-xs opacity-80">(-10%)</span>
             </Button>
           </Link>
         </div>

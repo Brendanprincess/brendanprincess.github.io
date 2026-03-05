@@ -26,7 +26,7 @@ const OrderFormPage = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Pass order info to payment page
-    navigate("/payment", { state: { order: form, price: 299 } });
+    navigate("/payment", { state: { order: form, price: 269.10 } });
   };
 
   return (
@@ -124,7 +124,7 @@ const OrderFormPage = () => {
           <div className="flex items-center justify-between pt-4">
             <div>
               <p className="text-muted-foreground text-sm">Total</p>
-              <p className="text-2xl font-bold text-foreground">$299.00</p>
+              <p className="text-2xl font-bold text-foreground">$269.10 <span className="text-sm text-muted-foreground line-through">$299.00</span> <span className="text-xs text-primary font-semibold">10% OFF</span></p>
             </div>
             <Button type="submit" size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 rounded-xl shadow-glow">
               Order Now
